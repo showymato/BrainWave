@@ -4,6 +4,8 @@ import { insertManyOrganOrders, insertOrganOrder } from "../controllers/orders/o
 import { insertManyMedicines, insertMedicineOne } from "../controllers/orders/medicine.controller.js";
 import { insertBloodOne, insertManyBlood } from "../controllers/orders/blood.controller.js";
 import { insertManyMedkits, insertMedkitOne } from "../controllers/orders/medKit.controller.js";
+import { newOrderData } from "../controllers/orders/newOrder.controller.js";
+
 
 const app = express();
 const router = express.Router();
@@ -30,5 +32,8 @@ router.post("/blood/insertMany", insertManyBlood);
 // blood routes
 router.post("/medkit/insert", insertMedkitOne);
 router.post("/medkit/insertMany", insertManyMedkits);
+
+// new Drone Order placing
+router.post("/newOrder", newOrderData)
 
 export default router;

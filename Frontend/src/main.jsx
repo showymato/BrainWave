@@ -19,6 +19,7 @@ import MedkitForm from './components/Forms/Medkit.form.jsx'
 import Jatayu from './components/Drone/Jatayu.jsx'
 import Sudarshan from './components/Drone/Sudarshan.jsx'
 import Drone3 from './components/Drone/Drone3.jsx'
+import NewOrder from './components/Orders/NewOrder.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,6 +36,7 @@ const router = createBrowserRouter(
       <Route path='medicineForm' element={<MedicineForm/>}/>
       <Route path='bloodForm' element={<BloodForm/>}/>
       <Route path='medkitForm' element={<MedkitForm/>}/>
+      <Route path='newOrder' element={<NewOrder/>}/>
       <Route path="/drones/jatayu" element={<Jatayu />} />
       <Route path="/drones/sudarshan" element={<Sudarshan />} />
       <Route path="/drones/drone3" element={<Drone3 />} />

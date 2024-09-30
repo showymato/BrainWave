@@ -70,7 +70,11 @@ export default function OrdersTable({orders}) {
             key={column.dataKey}
             align="left"
           >
-            {row ? row[column.dataKey] : 'N/A'}
+            {column.dataKey === 'requestDate' ? (
+            new Date(row[column.dataKey]).toLocaleDateString('en-GB') // Convert and format the date
+          ) : (
+            row ? row[column.dataKey] : 'N/A'
+          )}
           </TableCell>
         ))}
       </>

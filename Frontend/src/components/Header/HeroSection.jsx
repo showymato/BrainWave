@@ -13,9 +13,9 @@ function HeroSection() {
     >
       <div className="w-1/2 px-10 pt-6">
         <h1 className='text-4xl font-bold pb-8'>
-          <span className='text-rose-600'>Saving Lives</span> with Swift Organ Deliveries
+          <span className='text-rose-600'>Saving Lives</span> with Swift Medical Deliveries
         </h1>
-        <h2 className='text-stone-500 text-md font-semibold text-justify pb-8'>Dedicated to Enhancing Emergency Medical Response with Innovative Drone Technology, Ensuring Swift and Safe Delivery of Organs When Every Moment Matters.</h2>
+        <h2 className='text-stone-500 text-md font-semibold text-justify pb-8'>Dedicated to Enhancing Emergency Medical Response with Innovative Drone Technology, Ensuring Swift and Safe Delivery of life saving supplies when every moment matters.</h2>
         <div className="bg-red-500 py-2 text-center rounded-3xl font-bold px-2 w-40 text-white">
           <Link to="/requestType">
             <button className=''>Urgent Delivery</button>

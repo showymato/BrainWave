@@ -32,10 +32,10 @@ export const navLinks = [
         id: "/admin_panel",
         title: "Admin Panel",
     },
-    {
-        id: "/dashboard",
-        title: "Dashboard",
-    },
+    // {
+    //     id: "/dashboard",
+    //     title: "Dashboard",
+    // },
 ];
 
 const Navbar = () => {

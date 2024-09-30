@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import organisations from "./organisation.api.js"; // Your JSON data
 
 function Organisations() {
     // State to manage the input value and search results
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredCities, setFilteredCities] = useState([]);
+
+    const defaultState = "Maharashtra"; 
 
     // Handle the search operation
     const handleSearch = () => {
@@ -25,6 +27,15 @@ function Organisations() {
         setFilteredCities([]);
     };
 
+    useEffect(() => {
+        setSearchQuery(defaultState);
+        const filteredState = organisations.find(
+            (org) => org.state.toLowerCase() === defaultState.toLowerCase()
+        );
+        if (filteredState) {
+            setFilteredCities(filteredState.cities);
+        }
+    }, []); // Empty dependency array means it runs once on mount
 
     return (
         <div>
@@ -69,7 +80,7 @@ function Organisations() {
                                     >
                                         <h4 className="text-center text-xl font-semibold font-serif py-1">{city.city}</h4>
                                         {/* <p>Hospitals: {city.hospitals.length}</p> */}
-                                        <p className="text-gray-700"><span className="text-black font-serif">Name:</span> {city.hospitals[0]?.name}</p>
+                                        <p className="text-gray-700"><span className="text-black font-serif">Name:</span> <span className="font-semibold">{city.hospitals[0]?.name}</span></p>
                                         <p className="text-gray-700"><span className="text-black font-serif">Address:</span> {city.hospitals[0]?.address}</p>
                                         <p className="text-gray-700"><span className="text-black font-serif">Contact:</span> 098769 53511</p>
                                         <p className="text-gray-700"><span className="text-black font-serif">Map Link:</span> &nbsp;
