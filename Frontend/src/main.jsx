@@ -10,7 +10,7 @@ import DronesPage from './Pages/Drones.page.jsx'
 import WeatherForcastPage from './Pages/WeatherForcast.page.jsx'
 import OrganisationsPage from './Pages/Organisations.page.jsx'
 import AdminPanelPage from './Pages/AdminPanel.page.jsx'
-import DashboardPage from './Pages/Dashboard.page.jsx'
+// import DashboardPage from './Pages/Dashboard.page.jsx'
 import RequestPage from './Pages/Request.page.jsx'
 import OrganForm from './components/Forms/Organ.form.jsx'
 import MedicineForm from './components/Forms/Medicines.form.jsx'
@@ -30,7 +30,7 @@ const router = createBrowserRouter(
       <Route path='organisations' element={<OrganisationsPage/>}/>
       <Route path='weather_forecast' element={<WeatherForcastPage/>}/>
       <Route path='admin_panel' element={<AdminPanelPage/>}/>
-      <Route path='dashboard' element={<DashboardPage/>}/>
+      {/* <Route path='dashboard' element={<DashboardPage/>}/> */}
       <Route path='requestType' element={<RequestPage/>}/>
       <Route path='organForm' element={<OrganForm/>}/>
       <Route path='medicineForm' element={<MedicineForm/>}/>
