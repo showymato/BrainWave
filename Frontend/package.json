@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "start": "vite preview",
-    "lint": "eslint ."
+    "dev": "concurrently \"vite\" \"npm run backend\"",
+    "build": "concurrently \"vite build\" \"npm run backend\"",
+    "start": "concurrently \"vite preview\" \"npm run backend\"",
+    "lint": "eslint .",
+    "backend": "cd ../Backend && npm start"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -21,6 +22,7 @@
     "alert": "^6.0.2",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.7.5",
+    "concurrently": "^9.0.1",
     "lottie-react": "^2.4.0",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
