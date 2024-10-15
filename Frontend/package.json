@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite preview\" \"npm run backend\"",
-    "build": "concurrently \"vite build\" \"npm run backend\"",
-    "start": "concurrently \"vite preview\" \"npm run backend\"",
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite preview",
     "lint": "eslint .",
     "backend": "cd ../Backend && npm start"
   },
