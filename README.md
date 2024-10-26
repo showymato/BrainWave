@@ -2,6 +2,8 @@
 
 MedDroneX is an intelligent logistics management solution designed for healthcare, ensuring that medical supplies and sensitive products reach their destination safely and in optimal condition. By leveraging real-time monitoring, automated compliance tracking, and advanced analytics, BrainWave optimizes delivery operations, enhancing quality control and regulatory compliance for healthcare logistics.
 
+Visit the site - https://brainwave-drone.vercel.app/
+
 ## Table of Contents
 
 - [Features](#features)
