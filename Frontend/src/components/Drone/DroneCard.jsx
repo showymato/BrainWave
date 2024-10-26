@@ -65,7 +65,7 @@ const DroneCard = () => {
       style={{backgroundImage: "linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% )"}}
     >
       <div className="">
-        <h1 className='text-center font-bold text-2xl text-rose-600 font-serif py-16'>
+        <h1 className='text-center font-bold text-2xl text-rose-600 py-16'>
           Drones Available
         </h1>
       </div>
@@ -78,7 +78,7 @@ const DroneCard = () => {
             </div>
             <div className="">
               <div className="">
-                <h2 className="z-10 text-3xl text-orange-500 text-center py-7 font-serif font-bold">{drone.name}</h2>
+                <h2 className="z-10 text-3xl text-orange-500 text-center py-7   font-bold">{drone.name}</h2>
               </div>
             </div>
           </div>

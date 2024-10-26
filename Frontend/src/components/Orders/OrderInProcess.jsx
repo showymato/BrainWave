@@ -19,8 +19,8 @@ function OrderInProcess() {
         // style={{backgroundImage: "radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )"}}
         >
             <div className="mb-4 flex justify-between">
-                <h2 className="text-2xl font-bold text-blue-800 font-serif">Current Order in Process</h2>
-                <button className='font-serif font-medium bg-red-600 py-1 px-3 rounded-xl text-white'>In Detail</button>
+                <h2 className="text-2xl font-bold text-blue-800">Current Order in Process</h2>
+                <button className='font-medium bg-red-600 py-1 px-3 rounded-xl text-white'>In Detail</button>
             </div>
 
             <div className="flex">

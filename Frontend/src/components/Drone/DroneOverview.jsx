@@ -12,7 +12,7 @@ function DroneOverview() {
     return (
         <div className="p-6">
             <div className="">
-                <h1 className='text-center font-bold text-2xl text-rose-600 font-serif pt-7'>Drone Overview</h1>
+                <h1 className='text-center font-bold text-2xl text-rose-600   pt-7'>Drone Overview</h1>
             </div>
 
             <div className="flex py-16">

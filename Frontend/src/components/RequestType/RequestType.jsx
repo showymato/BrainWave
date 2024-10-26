@@ -33,7 +33,7 @@ function RequestType() {
   return (
     <div className="py-16">
         <div>
-        <h1 className='text-2xl text-center font-serif font-bold text-rose-600'>Choose Emergency Type</h1>
+        <h1 className='text-2xl text-center   font-bold text-rose-600'>Choose Emergency Type</h1>
         </div>
         <div className="grid grid-cols-4 mx-10 my-10">
             {requestype.map((map) => (

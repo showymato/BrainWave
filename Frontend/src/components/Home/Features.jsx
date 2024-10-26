@@ -13,12 +13,12 @@ const features = [
     image: feature1,
   },
   {
-    title: "Efficient Delievry",
-    description: "MedDrone X ensures rapid and secure trasnportation of organs, medicines and emergency supplies",
+    title: "Efficient Delivery",
+    description: "MedDrone X ensures rapid and secure transportation of organs, medicines and emergency supplies",
     image: feature2,
   },
   {
-    title: "Life-Saving Imapact",
+    title: "Life-Saving Impact",
     description: "With MedDrone X, you're a part of the future of healthcare, saving lives one delivery at a time",
     image: drone3,
   },

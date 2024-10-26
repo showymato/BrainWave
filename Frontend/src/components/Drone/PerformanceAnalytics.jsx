@@ -7,7 +7,7 @@ function PerformanceAnalytics() {
         <div className='px-10 pb-16'>
             <div className="">
                 <div className="">
-                    <h1 className='text-center font-bold text-2xl text-rose-600 font-serif pt-7 pb-16'>
+                    <h1 className='text-center font-bold text-2xl text-rose-600 pt-7 pb-16'>
                         Performance Analysis
                     </h1>
                 </div>
@@ -29,7 +29,7 @@ function PerformanceAnalytics() {
 
 
                     <div className="flex flex-col justify-center items-center w-1/2 rounded-xl shadow-xl ml-10">
-                        <h1 className='text-center font-bold text-xl text-blue-800 font-serif pt-8'>
+                        <h1 className='text-center font-bold text-xl text-blue-800 pt-8'>
                             Request Type
                         </h1>
                         <PieChart

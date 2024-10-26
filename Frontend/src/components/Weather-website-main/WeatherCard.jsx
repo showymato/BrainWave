@@ -108,7 +108,7 @@ function WeatherCard() {
       <div className="flex flex-col">
         <div className="flex justify-center items-center py-5 ">
             <img src={icon} alt="Weather Icon" id="tempIcon" className='h-12 w-12 mr-3'/>
-            <h2 id="weatherCountry" className='text-4xl font-semibold font-serif text-center'>
+            <h2 id="weatherCountry" className='text-4xl font-semibold text-center'>
                 {`${weatherData.name}`} 
             </h2>
         </div>

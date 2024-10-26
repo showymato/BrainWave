@@ -21,7 +21,7 @@ export default function EmergencyForm() {
   return (
     <div className="my-16">
         <div className="">
-            <h1 className='text-2xl text-red-600 font-serif font-bold  text-center'>Emergency Form</h1>
+            <h1 className='text-2xl text-red-600 font-bold  text-center'>Emergency Form</h1>
         </div>
         <div className="w-full max-w-md mx-auto px-10 py-8 my-8 bg-gray-100 rounded-xl shadow-lg border border-gray-100">
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">

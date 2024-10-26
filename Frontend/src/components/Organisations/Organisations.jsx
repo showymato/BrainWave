@@ -41,7 +41,7 @@ function Organisations() {
         <div>
             <div className="flex justify-between px-16 pt-10 pb-14">
                 <div className="">
-                    <h1 className='text-center font-bold text-3xl text-rose-600 font-serif'>Drone Stations</h1>
+                    <h1 className='text-center font-bold text-3xl text-rose-600  '>Drone Stations</h1>
                 </div>
 
                 <div className="flex">
@@ -54,11 +54,11 @@ function Organisations() {
                         </label>
                     </div>
                     <div className="py-2 px-2">
-                        <button className='font-serif font-medium bg-blue-600 py-1 px-3 rounded-xl text-white'
+                        <button className='  font-medium bg-blue-600 py-1 px-3 rounded-xl text-white'
                             onClick={handleSearch}>
                             Search
                         </button>
-                        <button className='font-serif font-medium bg-red-600 py-1 px-3 rounded-xl text-white'
+                        <button className='  font-medium bg-red-600 py-1 px-3 rounded-xl text-white'
                             onClick={handleClear}>
                             Clear
                         </button>
@@ -71,24 +71,24 @@ function Organisations() {
                 <div className="px-10">
                     {filteredCities.length > 0 ? (
                         <div className="">
-                            <h3 className='text-center font-bold text-2xl font-serif'>Cities in <span className="text-rose-600">{searchQuery}</span>  with Drone Stations:</h3>
+                            <h3 className='text-center font-bold text-2xl  '>Cities in <span className="text-rose-600">{searchQuery}</span>  with Drone Stations:</h3>
 
                             <div className="city-list grid grid-cols-3 gap-14 py-16">
                                 {filteredCities.map((city, index) => (
                                     <div key={index} className="city-card shadow-md shadow-blue-300 rounded-2xl py-4 px-4 grid gap-2"
                                         style={{backgroundImage: "radial-gradient( circle 1224px at 10.6% 8.8%,  rgba(255,255,255,1) 0%, rgba(153,202,251,1) 100.2% )"}}
                                     >
-                                        <h4 className="text-center text-xl font-semibold font-serif py-1">{city.city}</h4>
+                                        <h4 className="text-center text-xl font-semibold   py-1">{city.city}</h4>
                                         {/* <p>Hospitals: {city.hospitals.length}</p> */}
-                                        <p className="text-gray-700"><span className="text-black font-serif">Name:</span> <span className="font-semibold">{city.hospitals[0]?.name}</span></p>
-                                        <p className="text-gray-700"><span className="text-black font-serif">Address:</span> {city.hospitals[0]?.address}</p>
-                                        <p className="text-gray-700"><span className="text-black font-serif">Contact:</span> 098769 53511</p>
-                                        <p className="text-gray-700"><span className="text-black font-serif">Map Link:</span> &nbsp;
+                                        <p className="text-gray-700"><span className="text-black  ">Name:</span> <span className="font-semibold">{city.hospitals[0]?.name}</span></p>
+                                        <p className="text-gray-700"><span className="text-black  ">Address:</span> {city.hospitals[0]?.address}</p>
+                                        <p className="text-gray-700"><span className="text-black  ">Contact:</span> 098769 53511</p>
+                                        <p className="text-gray-700"><span className="text-black  ">Map Link:</span> &nbsp;
                                             <a href="https://maps.google.com/?q=19.1051,72.8348"
                                                className="text-blue-900 underline">Click Here</a>
                                         </p>
                                         <div className="flex justify-center items-center py-2">
-                                            <button className="text-rose-600 font-bold font-serif">View More</button>
+                                            <button className="text-rose-600 font-bold  ">View More</button>
                                         </div>
                                     </div>
                                 ))}

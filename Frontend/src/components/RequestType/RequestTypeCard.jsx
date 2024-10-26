@@ -7,7 +7,7 @@ function RequestTypeCard({image, title}) {
             <div className="">
                 <img src={image} alt="request type" className='h-36 w-48 rounded-xl'/>
             </div>
-            <div className="text-xl font-serif font-semibold pt-5">
+            <div className="text-xl font-semibold pt-5">
                 {title}
             </div>
         </div>

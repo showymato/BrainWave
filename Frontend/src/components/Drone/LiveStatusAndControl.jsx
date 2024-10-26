@@ -14,7 +14,7 @@ function LiveStatusAndControl() {
     <div className="px-10 py-16">
 
         <div className="">
-            <h1 className='text-center font-bold text-2xl text-rose-600 font-serif pt-7 pb-16'>Drone Status</h1>
+            <h1 className='text-center font-bold text-2xl text-rose-600   pt-7 pb-16'>Drone Status</h1>
         </div>
 
       {/* <div className="mb-6">

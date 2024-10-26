@@ -23,7 +23,7 @@ const DiagnosticsAndLogs = () => {
     return (
         <div className='px-10 pt-12 pb-24'>
             <div className="">
-                <h1 className='text-center font-bold text-2xl text-rose-600 font-serif pt-7 pb-16'>
+                <h1 className='text-center font-bold text-2xl text-rose-600   pt-7 pb-16'>
                     Diagnostics and Logs
                 </h1>
             </div>
