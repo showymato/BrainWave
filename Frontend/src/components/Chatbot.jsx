@@ -20,6 +20,7 @@ async function createChatSession(apiKey, externalUserId) {
 
 // Function to submit a query using the session ID
 async function submitQuery(apiKey, sessionId, query) {
+    console.log("submitted")
     const response = await fetch(`https://api.on-demand.io/chat/v1/sessions/${sessionId}/query`, {
         method: 'POST',
         headers: {
@@ -33,9 +34,8 @@ async function submitQuery(apiKey, sessionId, query) {
             responseMode: 'sync'
         })
     });
-
     const data = await response.json();
-    return data.data.message;
+    return data.data.answer;
 }
 
 const Chatbot = () => {
@@ -64,19 +64,16 @@ const Chatbot = () => {
 
         // Update chat history with the user's message
         setChatHistory((prev) => [...prev, { type: 'user', message: inputValue }]);
+        const tempInput = inputValue
+        setInputValue('');
+
 
         // Check for specific dummy response to "hello"
-        if (inputValue.toLowerCase() === "hello") {
-            setTimeout(() => {
-                setChatHistory((prev) => [...prev, { type: 'bot', message: "How may I help you today?" }]);
-            }, 400);
-        } else {
             // Send the query to the API and update chat history with the response
-            const botResponse = await submitQuery(apiKey, sessionId, inputValue);
-            setChatHistory((prev) => [...prev, { type: 'bot', message: botResponse }]);
-        }
+        const botResponse = await submitQuery(apiKey, sessionId, tempInput);
+        setChatHistory((prev) => [...prev, { type: 'bot', message: botResponse }]);
 
-        setInputValue('');
+        // setInputValue('');
     };
 
     return (
